@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #1f2937;
+  padding: 16px;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 560px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  margin: 4px 0 24px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 8px 0 16px;
+}
+
+.progress {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 1rem;
+  background: #f3f4f6;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.option:hover:not(:disabled) {
+  background: #e0e7ff;
+  border-color: #6366f1;
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.option.correct {
+  background: #dcfce7;
+  border-color: #16a34a;
+}
+
+.option.wrong {
+  background: #fee2e2;
+  border-color: #dc2626;
+}
+
+.feedback {
+  min-height: 24px;
+  margin: 14px 0 6px;
+  font-size: 0.95rem;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #1e3a8a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 8px 0;
+}
+
+.hidden {
+  display: none;
+}

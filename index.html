@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Computing Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Cloud Computing Quiz</h1>
+    <p class="subtitle">MECC1143 · Deployed on Netlify (PaaS)</p>
+
+    <!-- Start screen -->
+    <section id="start-screen">
+      <p>Test what you know about IaaS, PaaS, and SaaS. There are 5 questions.</p>
+      <button id="start-btn" class="btn">Start Quiz</button>
+    </section>
+
+    <!-- Quiz screen -->
+    <section id="quiz-screen" class="hidden">
+      <p id="progress" class="progress"></p>
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next-btn" class="btn hidden">Next</button>
+    </section>
+
+    <!-- Result screen -->
+    <section id="result-screen" class="hidden">
+      <h2>Quiz Finished!</h2>
+      <p id="score" class="score"></p>
+      <p id="message"></p>
+      <button id="restart-btn" class="btn">Try Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
